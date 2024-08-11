@@ -27,6 +27,7 @@
 
 .main-header{
     background-image: url('images/baground.jpg');
+    background-attachment: fixed;
 }
 
 .header{
@@ -38,6 +39,7 @@
 }
 
 hr{
+    margin-top: 50px;
     margin: -30px auto 10px;
 	padding: 0;
 	height: 50px;
@@ -45,4 +47,27 @@ hr{
 	border-bottom: 1px solid #1f1209;
 	box-shadow: 0 20px 20px -20px #333;
 	width: 95%;
+}
+
+.main-content {
+    width: 300px;
+    height: 600px;
+}
+
+img{
+    border-radius: 16px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: space-between; /* Пространство между элементами */
+    padding: 0 20%; /* Отступы слева и справа */
+}
+.main-content {
+    max-width: 50%; /* Максимальная ширина для текста */
+}
+.main-content img {
+    max-width: 100%; /* Изображение не выходит за рамки контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
 }
