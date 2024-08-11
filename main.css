@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
 @font-face {
-    font-family: "Ephesis Regular";
+    font-family: "Ephesis";
     font-style: normal;
     font-weight: 400;
     /* Браузер сначала попробует найти шрифт локально */
-    src: local("Ephesis Regular"),
+    src: local("Ephesis"),
          /* Если не получилось, загрузит woff2 */
          url("/font/Ephesis-Regular.woff2") format("woff2"),
          /* Если браузер не поддерживает woff2, загрузит woff */
@@ -16,8 +19,30 @@
   }
 
 .name-site{
-    font-family: 'Ephesis Regular';
+    font-family: 'Ephesis';
     font-size: 63px;
     text-align: center;
     color: #2E8B57;
+}
+
+.main-header{
+    background-image: url('images/baground.jpg');
+}
+
+.header{
+    left: 30px;
+    position: relative;
+    top: 70px;
+    font-size: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+hr{
+    margin: -30px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+	width: 95%;
 }
