@@ -7,19 +7,15 @@
 }
 
 @font-face {
-    font-family: "Ephesis";
+    font-family: 'Ephesis';
+    src: url('font/Ephesis-Regular.woff2') format('woff2'),
+         url('/font/Ephesis-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    /* Браузер сначала попробует найти шрифт локально */
-    src: local("Ephesis"),
-         /* Если не получилось, загрузит woff2 */
-         url("/font/Ephesis-Regular.woff2") format("woff2"),
-         /* Если браузер не поддерживает woff2, загрузит woff */
-         url("/font/Ephesis-Regular.woff") format("woff");
-  }
+}
 
 .name-site{
-    font-family: 'Ephesis';
+    font-family: 'Ephesis', sans-serif;
     font-size: 63px;
     text-align: center;
     color: #2E8B57;
